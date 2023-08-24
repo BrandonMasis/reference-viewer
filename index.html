@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Gesture Drawing App</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <label for="folder-input" id="custom-upload-label"
+        class="custom-upload-label">Upload Folder</label>
+    <input type="file" id="folder-input" directory=""
+        webkitdirectory="">
+    <input type="number" id="timer-input"
+        placeholder="Minutes per image">
+
+
+    <div id="countdown" style="display: none;"></div>
+    <img id="image" src="" alt="Slideshow Image"
+        style="display: none;">
+
+
+
+    <div id="completion-message" style="display: none;">
+        Congratulations! Slideshow complete.</div>
+    <div class="button-container">
+
+        <button id="previous-button" class="hide-button"><i
+                class="fa-solid fa-chevron-left"></i></button>
+        <button id="next-button" class="hide-button"><i
+                class="fa-solid fa-chevron-right"></i></button>
+        <button id="end-button" class="hide-button">End
+            Session</button>
+        <button id="start-button">Start Slideshow</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

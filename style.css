@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,700&family=Roboto+Mono:wght@300;400&display=swap');
+
+:root {
+    --primary-color: #484374;
+    --primary-color-hover: #2f2b55;
+    --background-color: #DAE0E5;
+    --button-background: #000000ad;
+    --button-text-color: #fafafa;
+    --button-hover-color: #3a3939;
+    --button-border-radius: 4px;
+    --input-border-radius: 5px;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --text-color: #000000ad;
+  }
+  
+*{
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background-color);
+  }
+  
+  .container {
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--shadow-color);
+    padding: 20px;
+    text-align: center;
+    max-width: 80%;
+    overflow: hidden;
+  }
+  
+  .upload-section,
+  .timer-section,
+  .image-section,
+  .button-section {
+    margin: 10px;
+  }
+  
+
+  
+  input[type="number"] {
+    width: 60px;
+    padding: 6px;
+  
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 90vh;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #countdown {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  #completion-message {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .upload-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .custom-upload-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    border-radius: var(--button-border-radius);
+    transition: background-color 0.3s;
+  }
+  
+  .custom-upload-label:hover {
+    background-color: var(--primary-color-hover);
+  }
+  
+  #folder-input {
+    visibility: hidden;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    
+    margin-top: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--text-color);
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-container button:hover {
+    background-color: var(--button-hover-color);
+  }
+  
+  .hide-button {
+    display: none;
+  }
+  
+
+  .fa-clock{
+    color: var(--text-color);
+  }
+
+  #start-button{
+    background-color: var(--primary-color);
+    border-radius: var(--input-border-radius);
+  }
+
+  #start-button:hover{
+    background-color: var(--primary-color-hover);
+    
+  }
